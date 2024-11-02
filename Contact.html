@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head >
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project1</title>
+        
+        <script>
+            function nameValidation() {
+                let text = document.forms["Form"]["Name"].value;
+                if (text == "") {
+                alert("Name field must be filled out");
+                return false;
+                }
+            }
+        function emailValidation() {
+        let email = document.forms["Form"]["email"].value;
+                if (text == "") {
+                alert("Email field must be filled out");
+                return false;
+                }
+            }
+            </script>
+    </head>
+
+    <body >
+        <header style="background-color: lightgray; padding: 20px">
+            <nav>
+                <ul style="margin: 0; padding: 0; list-style-type: none;">
+                    <li style="display: inline-block; margin-right: 20px;"><a href="Profile.html">Profile</a></li>
+                    <li style="display: inline-block; margin-right: 20px;"><a href="Reflection.html">Reflection</a></li>
+                    <li style="display: inline-block; margin-right: 20px;"><a href="Achievements.html">Achievements</a></li>
+                    <li style="display: inline-block; margin-right: 20px;"><a href="Professional.html">Profesional</a></li>
+                    <li style="display: inline-block; margin-right: 20px;"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1 style="color: black;">Contact:</h1>
+        </header>
+        
+        
+
+
+        <h2>Have Questions or want reach out to me?</h2>
+        <form name="Form" action="" onsubmit="return nameValidation(); emailValidation()">
+            <p><B>   Contact Me:</B></p>
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" placeholder="Your Name"> <br> <br>
+                <label for="email">Email;</label>
+                <input type="email" id="email" placeholder="youremail@gmail.com"><br> <br>
+                <label for="tel">Phone Number;</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####"><br> <br>
+            <input type="submit">
+            </form>
+            
+         
+    </body>
+
+</html>
